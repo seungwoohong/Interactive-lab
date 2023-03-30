@@ -14,9 +14,9 @@ class App {
     this.isDown = false;
     this.moveX = 0;
     this.offsetX = 0;
-    document.addEventListener('pointerdown', this.onDown.bind(this), false);
-    document.addEventListener('pointermove', this.onMove.bind(this), false);
-    document.addEventListener('pointerup', this.onUp.bind(this), false);
+    document.addEventListener("pointerdown", this.onDown.bind(this), false);
+    document.addEventListener("pointermove", this.onMove.bind(this), false);
+    document.addEventListener("pointerup", this.onUp.bind(this), false);
     window.requestAnimationFrame(this.animate.bind(this));
   }
 
@@ -30,8 +30,8 @@ class App {
 
     this.polygon = new Polygon(
       this.stageWidth / 2,
-      this.stageHeight + (this.stageHeight / 5),
-      this.stageHeight / 3,
+      this.stageHeight + this.stageHeight / 5,
+      this.stageHeight / 2,
       15
     );
   }
@@ -49,7 +49,7 @@ class App {
     this.moveX = 0;
     this.offsetX = e.clientX;
   }
-  
+
   onMove(e) {
     if (!this.isDown) return;
 
