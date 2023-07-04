@@ -1,0 +1,10 @@
+{
+  "name": "ThreeJS-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lil-gui": "^0.18.2",
+    "three": "^0.154.0"
+  }
+}
